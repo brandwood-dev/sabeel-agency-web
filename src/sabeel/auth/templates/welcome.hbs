@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Sabeel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: #27ae60;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        .content {
+            background: #f9f9f9;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        .welcome-message {
+            background: #e8f5e8;
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .unique-id {
+            background: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .footer {
+            background: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+        .btn {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sabeel</h1>
+        <p>Welcome to Your Journey</p>
+    </div>
+    
+    <div class="content">
+        <h2>Welcome {{firstName}}!</h2>
+        
+        <div class="welcome-message">
+            <p>Thank you for registering with Sabeel! Your account has been created successfully and you're now ready to begin your spiritual journey.</p>
+        </div>
+        
+        <p>Your unique identifier is:</p>
+        <div class="unique-id">
+            {{uniqueIdentifier}}
+        </div>
+        
+        <h3>What's Next?</h3>
+        <ul>
+            <li>Complete your profile information</li>
+            <li>Switch between Pèlerin and Accompagnant roles</li>
+            <li>Join our community of travelers</li>
+        </ul>
+        
+        <p>Your default role is <strong>Pèlerin</strong>, but you can switch to <strong>Accompagnant</strong> at any time.</p>
+        
+        <a href="#" class="btn">Complete Your Profile</a>
+        
+        <p>If you have any questions, please don't hesitate to contact our support team.</p>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2026 Sabeel. All rights reserved.</p>
+        <p>This is an automated message, please do not reply to this email.</p>
+    </div>
+</body>
+</html>
